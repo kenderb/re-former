@@ -2,10 +2,10 @@
 
 # Micro-reddit
 
-> This project is a practice for Active records in Ruby on Rails framework
+> This project is a practice for doing Forms in Ruby on Rails framework
 
 
-We implement migrations and models to complete the task.
+We implement migrations, models and form_with to complete the task.
 
 ## Built With
 
@@ -19,8 +19,9 @@ To get a local copy up and running follow these simple example steps.
 
 - You need Ruby 2.7.2 and rails >= 6.0.3.4
 - Open a terminal or command prompt interface on your PC.
-- Clone the repo with: git clone https://github.com/julian3493/micro-reddit.git
-- On the terminal navigate to the project directory using cd micro-reddit/
+- Clone the repo with: git clone https://github.com/kenderb/re-former
+- On the terminal navigate to the project directory using cd re-former/
+- run bundle update
 - run bundle install
 
 
@@ -45,7 +46,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/julian3493/micro-reddit/issues).
+Feel free to check the [issues page](https://github.com/kenderb/re-former/issues).
 
 ## Show your support
 
