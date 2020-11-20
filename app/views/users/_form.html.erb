@@ -1,6 +1,4 @@
-<%
-=begin%>
- 
+<!--
   <form action="users" method="POST" accept-charset="UTF-8">
     <div class="field">
       <label for="username">Username</label>
@@ -21,12 +19,13 @@
       sutmit
     </button>
   <form> 
-<%
-=end%>
+-->
 
 
 <%
 =begin%>
+ <!--
+
   <%= form_tag url_for(action: ‘create’), method: “post” do %>
 
     <div class="field">
@@ -47,7 +46,8 @@
     <div class="actions">
       <%= submit_tag ("Submit") %>
     </div>
-  <% end %> 
+  <% end %>
+--> 
 <%
 =end%>
 
