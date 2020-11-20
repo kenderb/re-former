@@ -2,36 +2,37 @@
 <aside id="notice"><%= notice %></aside>
 <% end %>
 <h1>Users</h1>
-<table>
-  <tfoot>
-    <tr>
-      <td colspan="3">
-        <%= link_to 'New User', new_user_path %>
-      </td>
-    </tr>
-  </tfoot>
-  <tbody>
+<div>
+  
+  <div>
     <% @users.each do |user| %>
-      <tr>
-        <td class="emil">
-          <h1><%= user.username %></h1>
-        <p>
-          <%= user.email %>
-        </p>
-        </td>
-        <td class="actions">
-          <ul>
+      <div class="flex-box user-list">
+        <div class="emil">
+            <h2><%= user.username %></h2>
+            <p>
+              <%= user.email %>
+            </p>
+        </div>
+        <div class="actions">
+          <ul class="flex-box">
             <li><%= link_to 'Show', user %></li>
             <li><%= link_to 'Edit', edit_user_path(user) %></li>
-            <li>
+            <li class="last-li">
             <%= link_to 'Destroy',
             user,
             method: :delete,
             data: { confirm: 'Are you sure?' } %>
             </li>
           </ul>
-        </td>
-      </tr>
+        </div>
+      </div>
     <% end %>
-  </tbody>
-</table>
+  </div>
+  <footer>
+    <div class="new-user">
+      <div colspan="3">
+        <%= link_to 'New User', new_user_path %>
+      </div>
+    </div>
+  </footer>
+</div>
