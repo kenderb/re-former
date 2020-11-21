@@ -1,0 +1,38 @@
+<% if notice %>
+<aside id="notice"><%= notice %></aside>
+<% end %>
+<h1>Users</h1>
+<div>
+  
+  <div>
+    <% @users.each do |user| %>
+      <div class="flex-box user-list">
+        <div class="emil">
+            <h2><%= user.username %></h2>
+            <p>
+              <%= user.email %>
+            </p>
+        </div>
+        <div class="actions">
+          <ul class="flex-box">
+            <li><%= link_to 'Show', user %></li>
+            <li><%= link_to 'Edit', edit_user_path(user) %></li>
+            <li class="last-li">
+            <%= link_to 'Destroy',
+            user,
+            method: :delete,
+            data: { confirm: 'Are you sure?' } %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <footer>
+    <div class="new-user">
+      <div colspan="3">
+        <%= link_to 'New User', new_user_path %>
+      </div>
+    </div>
+  </footer>
+</div>
