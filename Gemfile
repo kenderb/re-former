@@ -18,6 +18,7 @@ gem 'turbolinks', '5.2.1'
 gem 'tzinfo-data'
 gem 'webpacker', '4.2.2'
 gem 'will_paginate', '3.3.0'
+gem 'wdm', '>= 0.1.0'
 
 group :development, :test do
   gem 'byebug', '11.1.3', platforms: %i[mri mingw x64_mingw]

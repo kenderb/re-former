@@ -21,10 +21,16 @@ To get a local copy up and running follow these simple example steps.
 - Open a terminal or command prompt interface on your PC.
 - Clone the repo with: git clone https://github.com/kenderb/re-former
 - On the terminal navigate to the project directory using cd re-former/
-- run bundle update
-- run bundle install
+- type bundle update
+- type bundle install
+- type yarn install
+- type rails db:migrate
+- You need to install postgresql: https://www.postgresql.org/
 
-
+## Routes
+- Create a new user : 'http://localhost:3000/users/new'
+- Edit an user : Go to http://localhost:3000/users/id/edit
+- Show an user : http://localhost:3000/id
 
 
 ## Authors
