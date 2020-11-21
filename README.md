@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Micro-reddit
+# re-former
 
 > This project is a practice for doing Forms in Ruby on Rails framework
 
